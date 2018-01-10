@@ -1,43 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>XOXOXO — software development</title>
+    <title>Kai AB Zappe | Software Development in Berlin</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta property="og:image" content="http://xoxoxo.studio/images/screenshot.png" /> -->
-    <meta property="og:description" content="Kai Hacke, software development for web" />
-    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Rubik" rel="stylesheet">
 </head>
 <body>
-    <div id="wrapper">
-        <section id="intro" class="green">
-            <div id="logo"></div>
+    <svg class="logo" width="191px" height="119px" viewBox="0 0 191 119">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="logo">
+                <path d="M83,82.7534587 L63.7089844,63.0605469 L31.0439453,118.826172 L0,118.826172 L47.1738281,46.2822266 L2.43164062,0 L34.6914062,0 L83,52.5901246 L83,0 L106.992188,0 L107.154297,0 L107.154297,52.5901246 L155.462891,0 L187.722656,0 L142.980469,46.2822266 L190.154297,118.826172 L159.110352,118.826172 L126.445312,63.0605469 L107.154297,82.7534587 L107.154297,118.826172 L106.992188,118.826172 L83,118.826172 L83,82.7534587 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </svg>
 
-            <h1>Hello.</h1>
+    <div class="content-wrapper">
+        <section id="intro" class="visible">
+            <h1>hello.</h1>
             <p>
-                My name is Kai Hacke.<br>
-                I'm a Software Developer<br>
-                building for the Web.
+                I'm Kai and I’m a software developer
+                with a background in biological sciences, music and arts based in Berlin, Germany.
             </p>
 
-            <p class="link">
-                → <a href="mailto:hello@studio.xoxoxo">hello@xoxoxo.studio</a>
+            <a class="available" href="mailto:mail@xoxoxo.studio">
+                available for hire?  YES!  currently looking for permanent position
+            </a>
+
+            <p>
+                I mainly develop for the web, but also worked on numerous hardware
+                projects including all kinds of micro controllers and
+                computers (e.g. Raspberry Pi, CHIP, Electron).
             </p>
 
-            <p class="link">
-                → <a href="https://github.com/kopfklinik">github.com/goatspit</a>
+            <p>
+                <strong>Core skills:</strong> software development for web, UX design and
+                tech assessment, data visualisations, hardware prototyping
             </p>
-            <canvas id="pattern"></canvas>
-            <script src="pattern.js"></script>
+            <p>
+                <strong>Interests:</strong> electronics, music
+                production, analog video processing
+            </p>
+
+            <p>
+                Note: I'm still in the middle of cleaning up all my old projects, adding one by one to my new github account.
+                And I always have a hard time choosing what's "worthy". So that's why it doesn't have many projects at the moment.
+                <br>I'm more than happy to talk about all my wonky projects though! <br>Just shoot me a mail.
+            </p>
+
+            <p>
+                → <a href="mailto:mail@xoxoxo.studio">mail@xoxoxo.studio</a>
+            </p>
+
+            <p>
+                → <a href="https://github.com/goatspit">github.com/goatspit</a>
+            </p>
         </section>
-        <!-- <section id="tools">
-            <h2>Tools</h2>
+        <section>
+            <h2>tech.</h2>
 
             <p>
-                JavaScript: ReactJS, Backbone, Meteor, Webpack, Babel
+                <strong>JavaScript:</strong> React, Backbone, Node, D3, Meteor
             </p>
-        </section> -->
-    </div>
+
+            <p>
+                <strong>Ruby:</strong> Ruby on Rails, Sinatra
+            </p>
+
+            <p>
+                <strong>Electronics:</strong> Arduino, RaspPi, Teensy, CHIP, Electron
+            </p>
+
+            <p>
+                <strong>Vintage:</strong> analog video, Gameboy
+            </p>
+        </section>
+
+        <section>
+                <h2>press.</h2>
+
+                <p>
+                    Coming soon.
+                </p>
+        </section>
+
+        <section>
+                <h2>projects.</h2>
+
+                <p>
+                    Coming soon.
+                </p>
+        </section>
+</div>
+
+    <canvas id="lines"></canvas>
+    <script src="lines.js"></script>
 </body>

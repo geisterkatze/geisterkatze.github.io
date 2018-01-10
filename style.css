@@ -1,70 +1,91 @@
 body {
-    background: rgb(244, 88, 153);
-    color: #fdf7ff;
-    padding: 0;
+    background: #020105;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#wrapper {
-    width: 100%;
-    margin: auto;
-}
-
-#pattern {
-    width: 100%;
-    display: none;
-}
-
-#logo {
-    height: 140px;
-    width: 140px;
-    background-color: ##fdf7ff;
-    margin-bottom: 10px;
-    background-image: url('goat.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    display: none;
-}
-
-.green {
-    background-color: rgb(244, 88, 153);
-    color: #fefff9;
+    font-family: 'Abel', sans-serif;
 }
 
 h1 {
-    font-size: 60px;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Rubik';
 }
 
 h2 {
-    font-size: 42px;
+    text-align: center;
 }
 
-#intro {
-    margin-top: 200px;
+a, a:active, a:visited {
+    color: #fffef7;
 }
 
-#intro p {
-    font-size: 42px;
-    margin-top: 0;
+#lines {
+    position: absolute;
+    top: 0;
+    z-index: -300;
 }
 
-a {
-    text-decoration: none;
-    border-bottom: 4px solid #fdf7ff;
+#logo {
+    z-index: 1000;
+    display: absolute;
+    fill: #fffef7;
 }
 
-#intro .link {
-    font-size: 28px;
-    width: 60%;
+.logo {
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+
+@keyframes fadein {
+    from {
+        margin-top: -200px;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 150px;
+        opacity: 1;
+    }
+}
+
+.content-wrapper {
+    background: #020105;
+    color: #fffef7;
+    padding: 20px 80px;
+    margin: auto;
+    margin-top: 100px;
+    width: 80%;
+    min-height: 600px;
+}
+
+.content-wrapper p {
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 1.6;
+
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 section {
-    padding: 80px 80px 20px 180px;
+    margin-bottom: 100px;
 }
 
-a, a:visited {color: inherit;};
+.available {
+    padding: 20px;
+    border: 1px solid #fffef7;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
