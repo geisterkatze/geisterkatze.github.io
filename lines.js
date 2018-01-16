@@ -1,4 +1,4 @@
-const canvas = document.getElementById('lines');
+var canvas = document.getElementById('lines');
 canvas.width = window.innerWidth * 2;
 canvas.height = window.innerHeight * 2;
 canvas.style.width = canvas.width * 0.5 +"px";
@@ -6,14 +6,14 @@ canvas.style.height = canvas.height * 0.5 +"px";
 ctx = canvas.getContext('2d');
 ctx.scale(2,2);
 
-const white = "rgba(255, 254, 247, 0.4)";
+var white = "rgba(255, 254, 247, 0.4)";
 
 function drawLines(ctx, canvas, numberOfLines, color) {
-    let factor = 10;
-    let lineWidth = 1;
-    let spacing = 2;
+    var factor = 10;
+    var lineWidth = 1;
+    var spacing = 2;
 
-    for(let i = 0; i < numberOfLines; i++) {
+    for(var i = 0; i < numberOfLines; i++) {
         factor = Math.random() * (canvas.height / numberOfLines);
         lineWidth = Math.random() * 2;
         spacing = Math.random() * 6;
