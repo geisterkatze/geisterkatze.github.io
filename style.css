@@ -38,8 +38,7 @@ a, a:active, a:visited {
     margin: auto;
     margin-top: 150px;
 
-    /* animation-name: fadein;
-    animation-duration: 2s; */
+   background-image: url('images/ghostcat.png');
 }
 
 @keyframes fadein {
